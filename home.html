@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Netflix-Home</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="assets/scss/style.css" />
+  </head>
+  <body class="bg-black d-flex flex-column vh-100">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img src="assets/netflix_logo.png" alt="Netflix logo" width="100"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >TV Shows</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Movies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#"
+                  >Recently added</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">My list</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#"
+                  ><i class="bi bi-search"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">KIDS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#"
+                  ><i class="bi bi-bell-fill"></i
+                ></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img src="assets/avatar.png" alt="avatar" width="30" />
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><img src="assets/kids_icon.png" alt="kids" width="30"
+                    /></a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <div class="container-fluid">
+          <a class="navbar-brand ms-2" href="#"><h1>TV Shows</h1></a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle border border-tertiary"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Genres
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Comedies</a></li>
+                  <li><a class="dropdown-item" href="#">Docuseries</a></li>
+                  <li><a class="dropdown-item" href="#">Dramas</a></li>
+                  <li><a class="dropdown-item" href="#">Horror</a></li>
+                  <li><a class="dropdown-item" href="#">Italian</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Sciense & Nature</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link border border-tertiary px-3"
+                  aria-current="page"
+                  href="#"
+                  ><i class="bi bi-text-left"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link border border-tertiary px-3"
+                  aria-current="page"
+                  href="#"
+                  ><i class="bi bi-grid-fill"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <main class="flex-grow-1 mb-5">
+        <div class="container">
+          <h2 class="text-white">Trending Now</h2>
+          <div
+            class="row gx-1 gy-2 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-6 m-3"
+          >
+            <div class="col">
+              <img
+                src="assets/media/media0.webp"
+                alt="thumbnail"
+                class="thumbnail"
+                width="100%"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="assets/media/media1.jpg"
+                alt="thumbnail"
+                class="thumbnail"
+                width="100%"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="assets/media/media10.jpg"
+                alt="thumbnail"
+                class="thumbnail"
+                width="100%"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="assets/media/media11.jpg"
+                alt="thumbnail"
+                class="thumbnail"
+                width="100%"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="assets/media/media12.jpg"
+                alt="thumbnail"
+                class="thumbnail"
+                width="100%"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="assets/media/media13.jpg"
+                alt="thumbnail"
+                class="thumbnail"
+                width="100%"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <h2 class="text-white">Watch It Again</h2>
+          <div
+            class="row gx-1 gy-2 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-6 m-3"
+          >
+            <div class="col">
+              <img
+                src="assets/media/media2.webp"
+                alt="thumbnail"
+                class="thumbnail"
+                width="100%"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="assets/media/media20.jpg"
+                alt="thumbnail"
+                class="thumbnail"
+                width="100%"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="assets/media/media21.webp"
+                alt="thumbnail"
+                class="thumbnail"
+                width="100%"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="assets/media/media22.webp"
+                alt="thumbnail"
+                class="thumbnail"
+                width="100%"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="assets/media/media23.webp"
+                alt="thumbnail"
+                class="thumbnail"
+                width="100%"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="assets/media/media24.jpg"
+                alt="thumbnail"
+                class="thumbnail"
+                width="100%"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <h2 class="text-white">New Releases</h2>
+          <div
+            class="row gx-1 gy-2 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-6 m-3"
+          >
+            <div class="col">
+              <img
+                src="assets/media/media14.webp"
+                alt="thumbnail"
+                class="thumbnail"
+                width="100%"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="assets/media/media15.jpg"
+                alt="thumbnail"
+                class="thumbnail"
+                width="100%"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="assets/media/media16.webp"
+                alt="thumbnail"
+                class="thumbnail"
+                width="100%"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="assets/media/media17.jpg"
+                alt="thumbnail"
+                class="thumbnail"
+                width="100%"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="assets/media/media18.jpg"
+                alt="thumbnail"
+                class="thumbnail"
+                width="100%"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="assets/media/media19.webp"
+                alt="thumbnail"
+                class="thumbnail"
+                width="100%"
+              />
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="mt-5">
+        <div class="mx-md-5 navbar-dark">
+          <h3>
+            <i class="bi bi-facebook mx-2"></i
+            ><i class="bi bi-instagram mx-2"></i
+            ><i class="bi bi-twitter mx-2"></i
+            ><i class="bi bi-youtube mx-2"></i>
+          </h3>
+          <nav class="navbar navbar-dark bg-black">
+            <div class="container">
+              <div class="row row-cols-2 row-cols-md-4 gy-0 gx-5">
+                <div class="col">
+                  <ul class="navbar-nav me-auto mb-1">
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="#"
+                        >Audio and subtitles</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="#"
+                        >Media Center</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="#"
+                        >Privacy</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="#"
+                        >Contact us</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <ul class="navbar-nav me-auto mb-1">
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="#"
+                        >Audio description</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="#"
+                        >Investor relations</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="#"
+                        >Legal Notices</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <ul class="navbar-nav me-auto mb-1">
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="#"
+                        >Help Center</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="#">Jobs</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="#"
+                        >Cookie Preferences</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <ul class="navbar-nav me-auto mb-1">
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="#"
+                        >Gift Cards</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="#"
+                        >Terms of Use</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="#"
+                        >Corporate Information</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="container">
+                <div class="row mt-2">
+                  <div class="col col-6 col-md-2">
+                    <ul class="navbar-nav me-auto mb-1">
+                      <li class="nav-item">
+                        <a
+                          class="nav-link border text-center"
+                          aria-current="page"
+                          href="#"
+                          >Service Code</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="container text-secondary">
+                <p>&copy; 1997-2023 Netflix, Inc.</p>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </footer>
+    </header>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

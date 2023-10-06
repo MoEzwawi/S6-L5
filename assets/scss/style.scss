@@ -1,0 +1,7 @@
+.thumbnail{
+    cursor: pointer;
+    transition: transform 1s;
+    &:hover{
+        transform: scale(1.25);
+    }
+}
